@@ -3,48 +3,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harendra Singh Kuntal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galaxy Live Wallpaper</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f0f0f0;
+      box-sizing: border-box;
     }
-    header {
-      background-color: #333;
+
+    body, html {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .galaxy-bg {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(270deg, #0f0c29, #302b63, #24243e, #8a2387, #e94057, #f27121);
+      background-size: 2000% 2000%;
+      animation: animateGalaxy 20s ease infinite;
+      z-index: -1;
+    }
+
+    @keyframes animateGalaxy {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .content {
+      position: relative;
+      height: 100%;
+      width: 100%;
       color: white;
-      padding: 1rem;
-      font-size: 1.5rem;
-    }
-    .buttons {
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      margin: 3rem 0;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
     }
-    .buttons a {
-      text-decoration: none;
-      background-color: #007bff;
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 5px;
-      font-size: 1.2rem;
-      transition: background 0.3s;
-    }
-    .buttons a:hover {
-      background-color: #0056b3;
+
+    h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 10px rgba(255,255,255,0.6);
     }
   </style>
 </head>
 <body>
-  <header>Harendra Singh Kuntal</header>
-  <div class="buttons">
-    <a href="stocks.html">Stocks</a>
-    <a href="sells.html">Sells</a>
-    <a href="buys.html">Buys</a>
+  <div class="galaxy-bg"></div>
+  <div class="content">
+    <h1>Welcome to the Galaxy</h1>
   </div>
 </body>
 </html>
