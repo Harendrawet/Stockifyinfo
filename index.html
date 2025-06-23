@@ -8,10 +8,18 @@
   <style>
     body {
       margin: 0;
-      background: black;
       font-family: Arial, sans-serif;
       color: white;
       text-align: center;
+      background: linear-gradient(-45deg, #000000, #1a1a1a, #000000, #262626);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
     }
 
     h1 {
