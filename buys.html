@@ -1,33 +1,34 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>Total Buys</title>
   <style>
-    body { font-family: Arial; text-align: center; margin-top: 50px; }
-    .stat-button {
-      background-color: #28a745;
+    body {
+      background: black;
       color: white;
-      padding: 1rem 2rem;
-      font-size: 1.5rem;
-      border: none;
-      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 40px;
     }
-    .live-value {
-      font-size: 2rem;
-      color: #ff5722;
-      margin-left: 1rem;
+
+    .live {
+      font-size: 24px;
+      margin-top: 20px;
+      color: #00ffcc;
     }
   </style>
+  <script>
+    function updateValue() {
+      const val = (Math.random() * 500 + 500).toFixed(2);
+      document.getElementById("buyVal").innerText = val + " ₹";
+    }
+    setInterval(updateValue, 1000);
+    window.onload = updateValue;
+  </script>
 </head>
 <body>
-  <header><h2>Harendra Singh Kuntal - Buys</h2></header>
-  <button class="stat-button">Total Buys <span class="live-value" id="buysValue">0</span></button>
-  <script>
-    setInterval(() => {
-      document.getElementById('buysValue').textContent = Math.floor(Math.random() * 200);
-    }, 2000);
-  </script>
+  <h1>Total Buys</h1>
+  <div class="live">Live Value: <span id="buyVal">--</span></div>
 </body>
 </html>
