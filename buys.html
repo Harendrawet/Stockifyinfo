@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Total Buys</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin-top: 50px; }
+    .stat-button {
+      background-color: #28a745;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 8px;
+    }
+    .live-value {
+      font-size: 2rem;
+      color: #ff5722;
+      margin-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header><h2>Harendra Singh Kuntal - Buys</h2></header>
+  <button class="stat-button">Total Buys <span class="live-value" id="buysValue">0</span></button>
+  <script>
+    setInterval(() => {
+      document.getElementById('buysValue').textContent = Math.floor(Math.random() * 200);
+    }, 2000);
+  </script>
+</body>
+</html>
