@@ -9,9 +9,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, a, p, button {
-  animation: colorShift 4s infinite alternate;
+  color: white;
   position: relative;
   z-index: 10;
+}
+
+/* Only stockify.info will have animation */
+#logo, .stockify-animated {
+  animation: colorShift 4s infinite alternate;
 }
 
 @keyframes colorShift {
