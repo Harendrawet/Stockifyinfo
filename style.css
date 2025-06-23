@@ -1,0 +1,35 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  overflow: hidden;
+  color: white;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, button {
+  animation: colorShift 4s infinite alternate;
+  position: relative;
+  z-index: 10;
+}
+
+@keyframes colorShift {
+  0% { color: #ff9900; }
+  50% { color: #00ffcc; }
+  100% { color: #ff00cc; }
+}
+
+.rupee {
+  position: fixed;
+  top: -50px;
+  font-size: 24px;
+  animation: fall linear infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(120vh); opacity: 0; }
+}
