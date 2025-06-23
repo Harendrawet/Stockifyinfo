@@ -75,3 +75,14 @@ h1, h2, h3, h4, h5, h6, a, p, button {
   border: 1px solid rgba(128, 0, 128, 0.4); /* purple border */
   box-shadow: 0 0 12px rgba(128, 0, 128, 0.3); /* purple glow */
 }
+
+
+.group-box.top-box {
+  background: rgba(128, 0, 128, 0.2);
+  border: 1px solid rgba(128, 0, 128, 0.4);
+  box-shadow: 0 0 12px rgba(128, 0, 128, 0.3);
+  border-radius: 16px;
+  padding: 15px;
+  display: inline-block;
+  margin: 20px auto;
+}
