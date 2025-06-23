@@ -3,22 +3,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Galaxy Live Wallpaper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harendra Singh Kuntal</title>
   <style>
-    * {
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      background-color: #f0f0f0;
     }
-
-    body, html {
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-      font-family: 'Segoe UI', sans-serif;
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      font-size: 1.5rem;
     }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    .buttons a {
+      text-decoration: none;
+      background-color: #007bff;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      transition: background 0.3s;
+    }
+    .buttons a:hover {
+      background-color: #0056b3;
+    }
+  </style>
 
+  <style>
     .galaxy-bg {
       position: fixed;
       width: 100%;
@@ -35,28 +56,24 @@
       100% { background-position: 0% 50%; }
     }
 
-    .content {
+    body * {
       position: relative;
-      height: 100%;
-      width: 100%;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
+      z-index: 1;
     }
 
-    h1 {
-      font-size: 3rem;
-      text-shadow: 0 0 10px rgba(255,255,255,0.6);
+    body {
+      background: black; /* Fallback */
     }
   </style>
+
 </head>
 <body>
   <div class="galaxy-bg"></div>
-  <div class="content">
-    <h1>Welcome to the Galaxy</h1>
+  <header>Harendra Singh Kuntal</header>
+  <div class="buttons">
+    <a href="stocks.html">Stocks</a>
+    <a href="sells.html">Sells</a>
+    <a href="buys.html">Buys</a>
   </div>
 </body>
 </html>
