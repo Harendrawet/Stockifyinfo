@@ -9,14 +9,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, a, p, button {
-  color: white;
+  animation: colorShift 4s infinite alternate;
   position: relative;
   z-index: 10;
-}
-
-/* Only stockify.info will have animation */
-#logo, .stockify-animated {
-  animation: colorShift 4s infinite alternate;
 }
 
 @keyframes colorShift {
@@ -25,10 +20,10 @@ h1, h2, h3, h4, h5, h6, a, p, button {
   100% { color: #ff00cc; }
 }
 
-.dot {
+.rupee {
   position: fixed;
-  top: -10px;
-  border-radius: 50%;
+  top: -50px;
+  font-size: 24px;
   animation: fall linear infinite;
   z-index: 1;
   pointer-events: none;
@@ -37,52 +32,4 @@ h1, h2, h3, h4, h5, h6, a, p, button {
 @keyframes fall {
   0% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(120vh); opacity: 0; }
-}
-
-
-.group-box {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 16px;
-  width: fit-content;
-  max-width: 90%;
-  text-align: center;
-}
-
-
-.group-box {
-  background: rgba(255, 255, 255, 0.08); /* slightly more visible */
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 16px;
-  width: fit-content;
-  max-width: 90%;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05); /* soft glow */
-}
-
-
-.group-box {
-  background: rgba(128, 0, 128, 0.2); /* semi-transparent purple */
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 16px;
-  width: fit-content;
-  max-width: 90%;
-  text-align: center;
-  border: 1px solid rgba(128, 0, 128, 0.4); /* purple border */
-  box-shadow: 0 0 12px rgba(128, 0, 128, 0.3); /* purple glow */
-}
-
-
-.group-box.top-box {
-  background: rgba(128, 0, 128, 0.2);
-  border: 1px solid rgba(128, 0, 128, 0.4);
-  box-shadow: 0 0 12px rgba(128, 0, 128, 0.3);
-  border-radius: 16px;
-  padding: 15px;
-  display: inline-block;
-  margin: 20px auto;
 }

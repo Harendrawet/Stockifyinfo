@@ -2,59 +2,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Stockify.info</title>
   <style>
     body {
       margin: 0;
-      padding: 20px;
       font-family: Arial, sans-serif;
-      background: #111;
-      color: #fff;
+      color: white;
       text-align: center;
+      background: linear-gradient(-45deg, #000000, #1a1a1a, #000000, #262626);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    @keyframes titleColorChange {
+      0% { color: orange; }
+      25% { color: #ffcc00; }
+      50% { color: #00ffcc; }
+      75% { color: #ff66cc; }
+      100% { color: orange; }
     }
 
     h1 {
-      color: #b19cd9;
+      animation: titleColorChange 5s linear infinite;
+      margin-top: 30px;
       font-size: 2.5em;
-      margin-bottom: 30px;
     }
 
-    .button-row {
-      background-color: #6a0dad; /* Deep purple */
-      border-radius: 15px;
-      padding: 20px;
-      margin: 20px auto;
-      width: fit-content;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      box-shadow: 0 0 20px #6a0dad88;
+    .top-buttons {
+      margin-top: 20px;
     }
 
-    .btn {
-      padding: 12px 20px;
-      font-size: 16px;
-      font-weight: bold;
+    .top-buttons button {
+      background: linear-gradient(to right, yellow, orange);
       border: none;
+      padding: 10px 20px;
+      margin: 10px;
       border-radius: 10px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      color: black;
+    }
+
+    .middle-buttons {
+      margin-top: 50px;
+    }
+
+    .middle-buttons button {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      border: none;
+      padding: 15px 30px;
+      margin: 15px;
+      border-radius: 12px;
+      color: white;
+      font-size: 18px;
       cursor: pointer;
     }
 
-    .yellow-btn {
-      background: linear-gradient(to right, #ffea00, #ffa500);
-      color: #000;
-    }
-
-    .blue-btn {
-      background: linear-gradient(to right, #00c6ff, #0072ff);
-      color: #fff;
-    }
-
-    .orange-btn {
-      background: linear-gradient(to right, #ffa500, #ff4500);
-      color: white;
+    a {
+      text-decoration: none;
     }
   </style>
 </head>
@@ -62,28 +77,35 @@
 
   <h1>Stockify.info</h1>
 
-  <!-- Row 1 -->
-  <div class="button-row">
-    <button class="btn yellow-btn">Profile</button>
-    <button class="btn yellow-btn">Mail</button>
-    <button class="btn yellow-btn">Contact</button>
+  <div class="top-buttons">
+    <a href="profile.html"><button>Profile</button></a>
+    <a href="mail.html"><button>Mail</button></a>
+    <a href="contact.html"><button>Contact</button></a>
   </div>
 
-  <!-- Row 2 -->
-  <div class="button-row">
-    <button class="btn blue-btn">Stocks</button>
-    <button class="btn blue-btn">Sells</button>
+  <div class="middle-buttons">
+    <a href="stocks.html"><button>Stocks</button></a>
+    <a href="sells.html"><button>Sells</button></a>
+    <a href="buys.html"><button>Buys</button></a>
   </div>
 
-  <!-- Row 3 -->
-  <div class="button-row">
-    <button class="btn blue-btn">Buys</button>
-  </div>
 
-  <!-- Row 4 -->
-  <div class="button-row">
-    <button class="btn orange-btn">Buy Promo Gen</button>
+  <div style="margin-top: 80px;">
+    <a href="promogen.html">
+      <button style="
+        background: linear-gradient(to right, #ff9900, #ff6600);
+        border: none;
+        padding: 20px 60px;
+        margin: 20px auto;
+        display: block;
+        border-radius: 15px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      ">Buy Promo Gen</button>
+    </a>
   </div>
-
+  <script src="sprinkle.js"></script>
 </body>
 </html>
