@@ -31,15 +31,53 @@
   <h1>Total Stocks</h1>
   <div class="live">Live Value: <span id="stockVal">--</span></div>
 
-<div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; margin-top: 50px;">
-  <button style="background-color: #6a0dad; color: white; padding: 15px 25px; border-radius: 12px; font-size: 18px; font-weight: bold; border: none;">
-    Hotmail <span id="count1" style="margin-left: 10px; font-size: 20px; font-family: monospace;">0</span>
+<style>
+  .custom-button {
+    background-color: #6a0dad;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    min-width: 200px;
+    margin: 10px;
+  }
+
+  .count-label {
+    margin-left: 10px;
+    font-size: 22px;
+    font-family: monospace;
+  }
+
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 50px auto 20px;
+    flex-wrap: wrap;
+  }
+
+  .bottom-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+</style>
+
+<div class="top-row">
+  <button class="custom-button">
+    Hotmail <span id="count1" class="count-label">0</span>
   </button>
-  <button style="background-color: #6a0dad; color: white; padding: 15px 25px; border-radius: 12px; font-size: 18px; font-weight: bold; border: none;">
-    Epic Games Account <span id="count2" style="margin-left: 10px; font-size: 20px; font-family: monospace;">0</span>
+  <button class="custom-button">
+    Epic Games Account <span id="count2" class="count-label">0</span>
   </button>
-  <button style="background-color: #6a0dad; color: white; padding: 15px 25px; border-radius: 12px; font-size: 18px; font-weight: bold; border: none;">
-    Steam Account <span id="count3" style="margin-left: 10px; font-size: 20px; font-family: monospace;">0</span>
+</div>
+
+<div class="bottom-row">
+  <button class="custom-button">
+    Steam Account <span id="count3" class="count-label">0</span>
   </button>
 </div>
 
