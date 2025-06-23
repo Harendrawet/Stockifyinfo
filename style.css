@@ -62,3 +62,16 @@ h1, h2, h3, h4, h5, h6, a, p, button {
   border: 1px solid rgba(255, 255, 255, 0.2); /* subtle border */
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.05); /* soft glow */
 }
+
+
+.group-box {
+  background: rgba(128, 0, 128, 0.2); /* semi-transparent purple */
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 16px;
+  width: fit-content;
+  max-width: 90%;
+  text-align: center;
+  border: 1px solid rgba(128, 0, 128, 0.4); /* purple border */
+  box-shadow: 0 0 12px rgba(128, 0, 128, 0.3); /* purple glow */
+}
