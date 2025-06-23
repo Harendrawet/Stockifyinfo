@@ -1,11 +1,12 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harendra Singh Kuntal</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stockify.info</title>
+<style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
@@ -37,9 +38,59 @@
     .buttons a:hover {
       background-color: #0056b3;
     }
-  </style>
-
-  <style>
+  
+@keyframes rainbowText {
+  0%{color:red;} 20%{color:orange;} 40%{color:yellow;} 60%{color:green;}
+  80%{color:blue;} 100%{color:violet;}
+}
+.rainbow-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  animation: rainbowText 5s infinite;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Segoe UI Black', sans-serif;
+}
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 10px;
+}
+.nav-buttons a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: linear-gradient(270deg, red, orange, yellow, green, blue, violet);
+  background-size: 600% 600%;
+  animation: animateGalaxy 10s ease infinite;
+  color: white;
+  border: none;
+}
+.main-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 4rem;
+}
+.main-buttons a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(270deg, #ff0080, #7928ca, #2afadf);
+  background-size: 600% 600%;
+  animation: animateGalaxy 8s ease infinite;
+  border-radius: 10px;
+  color: white;
+  border: none;
+}
+</style>
+<style>
     .galaxy-bg {
       position: fixed;
       width: 100%;
@@ -65,15 +116,26 @@
       background: black; /* Fallback */
     }
   </style>
-
 </head>
 <body>
-  <div class="galaxy-bg"></div>
-  <header>Harendra Singh Kuntal</header>
-  <div class="buttons">
-    <a href="stocks.html">Stocks</a>
-    <a href="sells.html">Sells</a>
-    <a href="buys.html">Buys</a>
-  </div>
+
+<div class="rainbow-heading">Stockify.info</div>
+<div class="nav-buttons">
+<a href="profile.html">Profile</a>
+<a href="mail.html">Mail</a>
+<a href="contact.html">Contact</a>
+</div>
+<div class="main-buttons">
+<a href="stocks.html">Stocks</a>
+<a href="sells.html">Sells</a>
+<a href="buys.html">Buys</a>
+</div>
+<div class="galaxy-bg"></div>
+<header>Harendra Singh Kuntal</header>
+<div class="buttons">
+<a href="stocks.html">Stocks</a>
+<a href="sells.html">Sells</a>
+<a href="buys.html">Buys</a>
+</div>
 </body>
 </html>
