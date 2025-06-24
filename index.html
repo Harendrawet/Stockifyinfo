@@ -2,37 +2,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Stockify.info</title>
   <style>
     body {
       margin: 0;
+      background: black;
       font-family: Arial, sans-serif;
       color: white;
       text-align: center;
-      background: linear-gradient(-45deg, #000000, #1a1a1a, #000000, #262626);
-      background-size: 400% 400%;
-      animation: gradientBG 10s ease infinite;
-    }
-
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
-
-    @keyframes titleColorChange {
-      0% { color: orange; }
-      25% { color: #ffcc00; }
-      50% { color: #00ffcc; }
-      75% { color: #ff66cc; }
-      100% { color: orange; }
     }
 
     h1 {
-      animation: titleColorChange 5s linear infinite;
+      color: orange;
       margin-top: 30px;
       font-size: 2.5em;
     }
@@ -50,7 +33,6 @@
       font-weight: bold;
       font-size: 16px;
       cursor: pointer;
-      color: black;
     }
 
     .middle-buttons {
@@ -84,28 +66,10 @@
   </div>
 
   <div class="middle-buttons">
-    <a href="stocks.html"><button>Stocks</button></a>
-    <a href="sells.html"><button>Sells</button></a>
-    <a href="buys.html"><button>Buys</button></a>
+    <button>Stocks</button>
+    <button>Sells</button>
+    <button>Buys</button>
   </div>
 
-
-  <div style="margin-top: 80px;">
-    <a href="promogen.html">
-      <button style="
-        background: linear-gradient(to right, #ff9900, #ff6600);
-        border: none;
-        padding: 20px 60px;
-        margin: 20px auto;
-        display: block;
-        border-radius: 15px;
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-        cursor: pointer;
-      ">Buy Promo Gen</button>
-    </a>
-  </div>
-  <script src="sprinkle.js"></script>
 </body>
 </html>
